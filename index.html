@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Undangan Khusus - Bang Bian</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', sans-serif; }
+        body { background: linear-gradient(135deg, #1e1e2f 0%, #2a2a40 100%); color: #333; min-height: 100vh; display: flex; justify-content: center; align-items: center; padding: 20px; }
+        .card { background: #ffffff; border-radius: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.3); max-width: 480px; width: 100%; overflow: hidden; text-align: center; animation: fadeIn 0.8s ease-in-out; }
+        .card-header { background: linear-gradient(135deg, #e67e22, #f39c12); color: white; padding: 30px 20px; }
+        .card-header h1 { font-size: 1.8rem; margin-bottom: 5px; }
+        .card-header p { font-size: 1rem; opacity: 0.9; }
+        .card-body { padding: 30px 20px; }
+        .greeting { font-size: 1.2rem; font-weight: 600; color: #2c3e50; margin-bottom: 15px; }
+        .invitation-text { color: #666; font-size: 0.95rem; margin-bottom: 25px; line-height: 1.6; }
+        .info-box { background: #f8f9fa; border-radius: 12px; padding: 20px; margin-bottom: 25px; border: 1px solid #e9ecef; text-align: left; }
+        .info-item { display: flex; align-items: center; margin-bottom: 15px; }
+        .info-item:last-child { margin-bottom: 0; }
+        .info-item i { font-size: 1.4rem; color: #e67e22; width: 35px; text-align: center; margin-right: 15px; }
+        .info-content .label { font-size: 0.8rem; color: #888; text-transform: uppercase; letter-spacing: 0.5px; }
+        .info-content .value { font-size: 1rem; font-weight: 600; color: #2c3e50; }
+        .btn-container { display: flex; flex-direction: column; gap: 12px; }
+        .btn { display: inline-flex; align-items: center; justify-content: center; gap: 10px; padding: 14px; border-radius: 10px; text-decoration: none; font-weight: 600; transition: all 0.3s ease; }
+        .btn-maps { background-color: #3498db; color: white; }
+        .btn-maps:hover { background-color: #2980b9; }
+        .btn-rsvp { background-color: #25d366; color: white; }
+        .btn-rsvp:hover { background-color: #21b857; }
+        .footer-text { margin-top: 25px; font-size: 0.9rem; color: #7f8c8d; font-weight: 500; }
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="card-header">
+            <h1>UNDANGAN KHUSUS</h1>
+            <p>You're Invited!</p>
+        </div>
+        <div class="card-body">
+            <div class="greeting">Hai Bang Bian! 🙌</div>
+            <p class="invitation-text">Izin menginfokan jam, tanggal, dan lokasi acara kumpul-kumpul kita:</p>
+            <div class="info-box">
+                <div class="info-item">
+                    <i class="fa-solid fa-calendar-days"></i>
+                    <div class="info-content">
+                        <div class="label">Hari / Tanggal</div>
+                        <div class="value">Selasa, 15 Desember 2026</div>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <i class="fa-solid fa-clock"></i>
+                    <div class="info-content">
+                        <div class="label">Waktu</div>
+                        <div class="value">19.00 WIB</div>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <div class="info-content">
+                        <div class="label">Lokasi</div>
+                        <div class="value">Four C'S Cafe & Eatery</div>
+                    </div>
+                </div>
+            </div>
+            <p class="invitation-text">Ditunggu banget kehadirannya ya! Biar persiapannya pas, tolong kabarin kalau bisa datang atau enggak.</p>
+            <div class="btn-container">
+                <a href="https://wa.me/?text=Halo,%20saya%20konfirmasi%20kehadiran%20untuk%20acara%20Selasa%2015%20Desember%202026" class="btn btn-rsvp" target="_blank">
+                    <i class="fa-brands fa-whatsapp"></i> Konfirmasi via WhatsApp
+                </a>
+                <a href="https://maps.google.com/?q=Four+C%27S+Cafe+%26+Eatery+Dipatiukur+Bandung" class="btn btn-maps" target="_blank">
+                    <i class="fa-solid fa-map-location-dot"></i> Petunjuk Google Maps
+                </a>
+            </div>
+            <div class="footer-text">Sampai ketemu di sana, Bang Bian! ✨</div>
+        </div>
+    </div>
+</body>
+</html>
